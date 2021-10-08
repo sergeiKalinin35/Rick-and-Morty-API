@@ -13,6 +13,9 @@
 		F4C11247270F677D00B9CECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C11245270F677D00B9CECA /* Main.storyboard */; };
 		F4C11249270F677E00B9CECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C11248270F677E00B9CECA /* Assets.xcassets */; };
 		F4C1124C270F677F00B9CECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C1124A270F677F00B9CECA /* LaunchScreen.storyboard */; };
+		F4C11254270F69F100B9CECA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C11253270F69F100B9CECA /* CollectionViewCell.swift */; };
+		F4C11257270FA94200B9CECA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C11256270FA94200B9CECA /* Model.swift */; };
+		F4C11259270FC0AD00B9CECA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C11258270FC0AD00B9CECA /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F4C11248270F677E00B9CECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C1124B270F677F00B9CECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4C1124D270F677F00B9CECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C11253270F69F100B9CECA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F4C11256270FA94200B9CECA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F4C11258270FC0AD00B9CECA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		F4C1123E270F677D00B9CECA /* Rick and Morty API */ = {
 			isa = PBXGroup;
 			children = (
+				F4C11255270FA92C00B9CECA /* Model */,
 				F4C1123F270F677D00B9CECA /* AppDelegate.swift */,
 				F4C11241270F677D00B9CECA /* SceneDelegate.swift */,
-				F4C11243270F677D00B9CECA /* ViewController.swift */,
 				F4C11245270F677D00B9CECA /* Main.storyboard */,
+				F4C11253270F69F100B9CECA /* CollectionViewCell.swift */,
+				F4C11243270F677D00B9CECA /* ViewController.swift */,
 				F4C11248270F677E00B9CECA /* Assets.xcassets */,
 				F4C1124A270F677F00B9CECA /* LaunchScreen.storyboard */,
 				F4C1124D270F677F00B9CECA /* Info.plist */,
 			);
 			path = "Rick and Morty API";
+			sourceTree = "<group>";
+		};
+		F4C11255270FA92C00B9CECA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4C11256270FA94200B9CECA /* Model.swift */,
+				F4C11258270FC0AD00B9CECA /* NetworkManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C11259270FC0AD00B9CECA /* NetworkManager.swift in Sources */,
+				F4C11257270FA94200B9CECA /* Model.swift in Sources */,
 				F4C11244270F677D00B9CECA /* ViewController.swift in Sources */,
 				F4C11240270F677D00B9CECA /* AppDelegate.swift in Sources */,
+				F4C11254270F69F100B9CECA /* CollectionViewCell.swift in Sources */,
 				F4C11242270F677D00B9CECA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "S.K.A..Rick-and-Morty-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "S.K.A..Rick-and-Morty-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
